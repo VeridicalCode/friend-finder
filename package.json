@@ -4,7 +4,7 @@
   "description": "A demo app that allows users to connect socially to other users with similar interests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "star": "node server.js"
   },
   "author": "Mars Getsoian",
   "license": "MIT",
