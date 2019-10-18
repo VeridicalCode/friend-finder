@@ -11,17 +11,19 @@ function findIndexOfBestMatch(inputArray) {
     const currentArray = i.scores;
     let subtractionArray = [];
     currentArray.forEach((j) => {
-      subtractionArray.push(Math.abs(currentArray[j] - inputArray[j]));
+      const var1 = parseInt(currentArray[j]);
+      const var2 = parseInt(inputArray[j]);
+      subtractionArray.push(Math.abs(var1 - var2));
     })
-    const sum = subtractionArray.reduce((a, b) => { a + b }); // once subtraction array is fully populated, sum it
+    const sum = subtractionArray.reduce((a, b) => {return a + b }); // once subtraction array is fully populated, sum it
     affinityArray.push(sum); // store in affinityArray; will have same index there as user does in user array
   });
   // once everybody is looped, get the index of the lowest # in affinity array (answers most like input)
-  affinityArray.forEach((k) => {
+  for (let k = 0; k < affinityArray.length; k++) {
     if (affinityArray[k] < affinityArray[leastIndex]) {
       leastIndex = k; // compare current to index, if lower, current is new index
     }
-  })
+  }
   return leastIndex;
 }
 
