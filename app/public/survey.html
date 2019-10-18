@@ -160,6 +160,8 @@
         Submit
       </button>
     </form>
+    what about specifically our images
+    <img src="https://www.thetvdb.com/banners/actors/351945.jpg" alt="" id="matchIMGdiv" />
   </div>
 
   <!-- Modal -->
@@ -175,7 +177,7 @@
         </div>
         <div class="modal-body">
           <h2><span id="matchNameDiv"></h2>
-          <img src="" alt="" id="matchIMGdiv" />
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" id="matchIMGdiv" />
           We're sure you two will be great friends!
         </div>
       </div>
@@ -197,31 +199,51 @@
     $('#submit').on('click', (event) => {
       event.preventDefault();
 
-      // Create an object for the user's data
-      const newUserObject = {
-        name: $("#nameInput").val().trim(),
-        photo: $("#imageInput").val(),
-        scores: [
-          $("#q1").val(),
-          $("#q2").val(),
-          $("#q3").val(),
-          $("#q4").val(),
-          $("#q5").val(),
-          $("#q6").val(),
-          $("#q7").val(),
-          $("#q8").val(),
-          $("#q9").val(),
-          $("#q10").val()
-        ]
-      };
-      // send data to post route
-      $.post("/survey", newUserObject, (data) => {
-        // data sent back by server should be the object of the best match user
-        console.log(data);
-        // edit modal fields to display best match
-        $("#matchNameDiv").text(data.name);
-        $("#matchIMGdiv").attr("src", data.photo);
-      });
+      // function to check all form items are filled out
+      function validateForm() {
+        let isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all fields are valid
+      if (validateForm()) {
+
+        // Create an object for the user's data
+        const newUserObject = {
+          name: $("#nameInput").val().trim(),
+          photo: $("#imageInput").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        // send data to post route
+        $.post("/survey", newUserObject, (data) => {
+          // data sent back by server should be the object of the best match user
+          console.log(data);
+          // edit modal fields to display best match
+          $("#matchNameDiv").text(data.name);
+          $("#matchIMGdiv").attr("src", data.photo);
+          console.log('currently reading image div as ', $('#matchIMGdiv').html);
+        });
+      }
+      else { // form wasn't valid
+        alert(`All questions must be answered for us to find you a friend!`);
+      }
+
     });
 
   </script>

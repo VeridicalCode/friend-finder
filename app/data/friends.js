@@ -3,7 +3,7 @@
 let usersArray = [
 	{
 		name: `Chrisjen`,
-		photo: `https://www.thetvdb.com/banners/actors/351947.jpg`,
+		photo: `./images/avasarala.jpg`,
 		scores: [
 			1,
 			2,
@@ -19,7 +19,7 @@ let usersArray = [
 	},
 	{
 		name: `Bobbie`,
-		photo: `https://3.bp.blogspot.com/-cya8C2Lnctw/XCTu4zG8dzI/AAAAAAAA03g/B9XeIJ7dyGAraIb_jjkGSWMpFC2P-MuIACEwYBhgL/s1600/Bobbie_Draper-looking_back.jpg`,
+		photo: `./images/bobbie.jpg`,
 		scores: [
 			2,
 			5,
@@ -35,7 +35,7 @@ let usersArray = [
 	},
 	{
 		name: `Anna`,
-		photo: `https://www.thetvdb.com/banners/actors/482557.jpg`,
+		photo: `./images/anna.jpg`,
 		scores: [
 			4,
 			2,
@@ -51,7 +51,7 @@ let usersArray = [
 	},
 	{
 		name: `Camina`,
-		photo: `https://www.thetvdb.com/banners/actors/449350.jpg`,
+		photo: `./images/drummer.jpg`,
 		scores: [
 			1,
 			1,
@@ -67,7 +67,7 @@ let usersArray = [
 	},
 	{
 		name: `Praxidike`,
-		photo: `https://www.thetvdb.com/banners/actors/449092.jpg`,
+		photo: `./images/prax.jpg`,
 		scores: [
 			3,
 			3,
@@ -83,7 +83,7 @@ let usersArray = [
 	},
 	{
 		name: `Jim`,
-		photo: `https://www.thetvdb.com/banners/actors/351944.jpg`,
+		photo: `./images/holden.jpg`,
 		scores: [
 			3,
 			1,
@@ -99,7 +99,7 @@ let usersArray = [
 	},
 	{
 		name: `Naomi`,
-		photo: `https://www.thetvdb.com/banners/actors/351948.jpg`,
+		photo: `./images/naomi.jpg`,
 		scores: [
 			2,
 			3,
@@ -115,7 +115,7 @@ let usersArray = [
 	},
 	{
 		name: `Amos`,
-		photo: `https://www.thetvdb.com/banners/actors/351946.jpg`,
+		photo: `./images/amos.jpg`,
 		scores: [
 			1,
 			2,
@@ -131,7 +131,7 @@ let usersArray = [
 	},
 	{
 		name: `Alex`,
-		photo: `https://www.thetvdb.com/banners/actors/351945.jpg`,
+		photo: `./images/alex.jpg`,
 		scores: [
 			3,
 			4,
@@ -147,7 +147,7 @@ let usersArray = [
 	},
 	{
 		name: `Josephus`,
-		photo: `https://www.thetvdb.com/banners/actors/351943.jpg`,
+		photo: `./images/miller.jpg`,
 		scores: [
 			4,
 			2,
