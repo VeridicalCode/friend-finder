@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta charset="utf-8">
 
-  <!-- Bootstrap & override CSS -->
+  <!-- CSS: Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -14,138 +14,154 @@
 
 <body>
 
-  <div class="row">
-    <div class="container">
-      <h1>Survey Questions</h1>
+  <div class="container">
+    <div class="row">
+      <div class="container">
+        <h1>Survey Questions</h1>
+      </div>
     </div>
-  </div>
-  <form>
-    <!-- name and image -->
-    <div class="form-group">
-      <label for="nameInput">Your name</label>
-      <input type="text" class="form-control" id="nameInput" placeholder="Firstname" required>
-    </div>
-    <div class="form-group">
-      <label for="imageInput">Your profile picture</label>
-      <input type="text" class="form-control" id="imageInput" required>
-    </div>
-    <!-- begin questions here -->
-    <!-- q1 -->
-    <div class="form-group">
-      <label for="q1">Vulgarity is a sign of a weak debater.</label>
-      <select class="form-control" id="q1">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q2 -->
-    <div class="form-group">
-      <label for="q2">The best food product on Earth is cucumber sandwiches.</label>
-      <select class="form-control" id="q2">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q3 -->
-    <div class="form-group">
-      <label for="q3">Faith should always be our guide in life.</label>
-      <select class="form-control" id="q3">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q4 -->
-    <div class="form-group">
-      <label for="q4">It's okay to lie to protect family.</label>
-      <select class="form-control" id="q4">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q5 -->
-    <div class="form-group">
-      <label for="q5">The truth should always be told, even when it's dangerous.</label>
-      <select class="form-control" id="q5">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q6 -->
-    <div class="form-group">
-      <label for="q6">We have a responsibility to our country, no matter where we go.</label>
-      <select class="form-control" id="q6">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q7 -->
-    <div class="form-group">
-      <label for="q7">Massive debilitiating injuries are just an excuse and will not keep me from my duty.</label>
-      <select class="form-control" id="q7">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q8 -->
-    <div class="form-group">
-      <label for="q8">I have a hard time knowing the right thing to do.</label>
-      <select class="form-control" id="q8">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q9 -->
-    <div class="form-group">
-      <label for="q9">I feel like I know some people very well even though I've never met them in person.</label>
-      <select class="form-control" id="q9">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
-    <!-- q10 -->
-    <div class="form-group">
-      <label for="q10">Dinner is essential family time.</label>
-      <select class="form-control" id="q10">
-        <option>1 (strongly disagree)</option>
-        <option>2</option>
-        <option>3 (equally agree and disagree)</option>
-        <option>4</option>
-        <option>5 (strongly agree)</option>
-      </select>
-    </div>
+    <form>
+      <!-- name and image -->
+      <div class="form-group">
+        <label for="nameInput">Your name</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="imageInput">Your profile picture</label>
+        <input type="text" class="form-control" id="imageInput" required>
+      </div>
+      <div>
+        <br />
+      </div>
+      <!-- begin questions here -->
+      <!-- q1 -->
+      <div class="form-group">
+        <label for="q1">Vulgarity is a sign of a weak debater.</label>
+        <select class="form-control" id="q1">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q2 -->
+      <div class="form-group">
+        <label for="q2">The best food product on Earth is cucumber sandwiches.</label>
+        <select class="form-control" id="q2">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q3 -->
+      <div class="form-group">
+        <label for="q3">Faith should always be our guide in life.</label>
+        <select class="form-control" id="q3">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q4 -->
+      <div class="form-group">
+        <label for="q4">It's okay to lie to protect family.</label>
+        <select class="form-control" id="q4">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q5 -->
+      <div class="form-group">
+        <label for="q5">The truth should always be told, even when it's dangerous.</label>
+        <select class="form-control" id="q5">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q6 -->
+      <div class="form-group">
+        <label for="q6">We have a responsibility to our country, no matter how it treats us or anyone else.</label>
+        <select class="form-control" id="q6">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q7 -->
+      <div class="form-group">
+        <label for="q7">Massive debilitiating injuries are just an excuse and will not keep me from my duty.</label>
+        <select class="form-control" id="q7">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q8 -->
+      <div class="form-group">
+        <label for="q8">I have a hard time knowing the right thing to do.</label>
+        <select class="form-control" id="q8">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q9 -->
+      <div class="form-group">
+        <label for="q9">I feel like I know some people very well even though I've never met them in person.</label>
+        <select class="form-control" id="q9">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+      <!-- q10 -->
+      <div class="form-group">
+        <label for="q10">Dinner is essential family time.</label>
+        <select class="form-control" id="q10">
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3 (equally agree and disagree)</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
 
-    <!-- submit button, triggers modal and api call -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#matchModal">
-      Submit
-    </button>
-  </form>
+      <!-- submit button, triggers modal and api call -->
+      <!-- data-toggle="modal" data-target="#matchModal" -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#matchModal" id="submit">
+        Submit
+      </button>
+    </form>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalLabel"
@@ -167,16 +183,52 @@
     </div>
   </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <!-- scripts: jquery, popper, bootstrap for bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- local handler for ajax call -->
+  <script type="text/javascript">
+    // catch form data
+    $('#submit').on('click', (event) => {
+      event.preventDefault();
+
+      // Create an object for the user's data
+      const newUserObject = {
+        name: $("#nameInput").val().trim(),
+        photo: $("#imageInput").val(),
+        scores: [
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+        ]
+      };
+      // send data to post route
+      $.post("/survey", newUserObject, (data) => {
+        // data sent back by server should be the object of the best match user
+        console.log(data);
+        // edit modal fields to display best match
+        $("#matchNameDiv").text(data.name);
+        $("#matchIMGdiv").attr("src", data.photo);
+        // // tell bootstrap to toggle modal
+        // $('#matchModal').modal('toggle');
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>

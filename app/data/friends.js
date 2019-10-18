@@ -162,3 +162,6 @@ let usersArray = [
 		]
 	}
 ]
+
+// export
+module.exports = usersArray;
