@@ -29,18 +29,18 @@ function findIndexOfBestMatch(inputArray) {
 module.exports = (app) => {
   
   // post to survey to read user answers
-  app.post('/survey', (request, result) => {
+  app.post('/survey', (request, response) => {
     // req.body was a new user object; run the findIndex function on its array key
     const indexOfBestVar = findIndexOfBestMatch(request.body.scores);
     // now push new user object to model
     usersArray.push(request.body);
     // and send the result object back for the html to display
-    result.send(usersArray[indexOfBestVar]);
+    response.send(usersArray[indexOfBestVar]);
   });
 
   // debug route to display all current users
-  app.get('/api/users', (request, result) => {
-    result.json(usersArray);
+  app.get('/api/users', (request, response) => {
+    response.json(usersArray);
   });
 }
 

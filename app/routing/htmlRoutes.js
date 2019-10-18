@@ -8,13 +8,13 @@ const path = require('path');
 module.exports = (app) => {
 
   // basic route for homepage
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/home.html'));
+  app.get('/', (request, response) => {
+    response.sendFile(path.join(__dirname, '../public/home.html'));
   });
 
   // route to serve survey
-  app.get('/survey', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/survey.html'));
+  app.get('/survey', (request, response) => {
+    response.sendFile(path.join(__dirname, '../public/survey.html'));
   });
 
 }
