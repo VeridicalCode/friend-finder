@@ -156,7 +156,6 @@
       </div>
 
       <!-- submit button, triggers modal and api call -->
-      <!-- data-toggle="modal" data-target="#matchModal" -->
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#matchModal" id="submit">
         Submit
       </button>
@@ -222,8 +221,6 @@
         // edit modal fields to display best match
         $("#matchNameDiv").text(data.name);
         $("#matchIMGdiv").attr("src", data.photo);
-        // // tell bootstrap to toggle modal
-        // $('#matchModal').modal('toggle');
       });
     });
 
