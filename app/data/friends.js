@@ -3,7 +3,7 @@
 let usersArray = [
 	{
 		name: `Chrisjen`,
-		photo: `/images/avasarala.png`,
+		photo: `images/avasarala.png`,
 		scores: [
 			1,
 			2,
@@ -19,7 +19,7 @@ let usersArray = [
 	},
 	{
 		name: `Bobbie`,
-		photo: `/images/bobbie.png`,
+		photo: `images/bobbie.png`,
 		scores: [
 			2,
 			5,
@@ -35,7 +35,7 @@ let usersArray = [
 	},
 	{
 		name: `Anna`,
-		photo: `/images/anna.png`,
+		photo: `images/anna.png`,
 		scores: [
 			4,
 			2,
@@ -51,7 +51,7 @@ let usersArray = [
 	},
 	{
 		name: `Camina`,
-		photo: `/images/drummer.png`,
+		photo: `images/drummer.png`,
 		scores: [
 			1,
 			1,
@@ -67,7 +67,7 @@ let usersArray = [
 	},
 	{
 		name: `Praxidike`,
-		photo: `/images/prax.png`,
+		photo: `images/prax.png`,
 		scores: [
 			3,
 			3,
@@ -83,7 +83,7 @@ let usersArray = [
 	},
 	{
 		name: `Jim`,
-		photo: `/images/holden.png`,
+		photo: `images/holden.png`,
 		scores: [
 			3,
 			1,
@@ -99,7 +99,7 @@ let usersArray = [
 	},
 	{
 		name: `Naomi`,
-		photo: `/images/naomi.png`,
+		photo: `images/naomi.png`,
 		scores: [
 			2,
 			3,
@@ -115,7 +115,7 @@ let usersArray = [
 	},
 	{
 		name: `Amos`,
-		photo: `/images/amos.png`,
+		photo: `images/amos.png`,
 		scores: [
 			1,
 			2,
@@ -131,7 +131,7 @@ let usersArray = [
 	},
 	{
 		name: `Alex`,
-		photo: `/images/alex.png`,
+		photo: `images/alex.png`,
 		scores: [
 			3,
 			4,
@@ -147,7 +147,7 @@ let usersArray = [
 	},
 	{
 		name: `Josephus`,
-		photo: `/images/miller.png`,
+		photo: `images/miller.png`,
 		scores: [
 			4,
 			2,
