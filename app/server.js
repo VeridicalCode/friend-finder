@@ -12,7 +12,7 @@ require('./routing/apiRoutes')(app);
 require('./routing/htmlRoutes')(app);
 
 // include image folder
-app.use(express.static('./data/images'));
+app.use(express.static('./public'));
 
 // start listening
 app.listen(PORT, function () {
