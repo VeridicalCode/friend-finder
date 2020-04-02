@@ -12,4 +12,4 @@ The app is hosted on Heroku. Navigating to [the host page there](https://sleepy-
 All local code was written solely by myself, Mars Getsoian. Bootstrap is courtesy of its creators, and source images are provided by the SyFy promotional team.
 
 ## Are There Bugs?
-Attempting to sumbit a survey with missing values will throw an appropriate error message, but still attempt to serve a survey. There's also no dedicated server, so users can only match with the pre-set user group, or with other users within the same session.
+Attempting to sumbit a survey with missing values will throw an appropriate error message, but still attempt to serve a response. There's also no dedicated server, so users can only match with the pre-set user group, or with other users within the same session.
