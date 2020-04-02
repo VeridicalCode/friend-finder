@@ -1,5 +1,7 @@
 # Friend Finder
 
+![Running the app](preview.jpg)
+
 ## What Is This Thing?
 A social compatibility app that tries to match users with each other based on responses to personality questions.
 
